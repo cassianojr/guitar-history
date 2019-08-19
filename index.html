@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://kit.fontawesome.com/4fbf6b1021.js"></script>
+	<link rel="stylesheet" href="css/simplelightbox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+	<title>Guitar History - A História das Guitarras</title>
+</head>
+
+<body id="home">
+	<nav class="navbar">
+		<div class="container">
+			<h1 class="logo">Guitar History</h1>
+			<ul class="nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#gallery">Galeria</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Showcase-->
+	<section class="section-a">
+		<div class="container">
+			<div>
+				<h1>A história das guitarras</h1>
+				<p>As guitarras elétricas surgiram em 1930, como uma modificação do próprio violão. Os primeiros modelos geravam um som muito suave e baixo, algo bem diferente do que conhecemos hoje em dia. </p>
+				<a href="#" class="btn">Ler mais</a>
+			</div>
+			<img src="img/les-paul-project.jpg" alt="">
+		</div>
+	</section>
+
+	<!-- Overlay Text-->
+	<section class="section-b">
+		<div class="overlay">
+			<div class="section-b-inner">
+				<h3>Alto e Claro</h3>
+				<h2>Existem inúmeros tipos de Guitarras</h2>
+				<p>Para os mais diversos timbres, estilos, gostos e cores existe uma guitarra correspondente!</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Gallery -->
+	<section class="section-c" id="gallery">
+		<div class="gallery">
+			<a href="img/gibson-sg.gif" class="big"><img src="img/gibson-sg.gif" alt="Gibson SG" /></a>
+			<a href="img/epiphone-double-neck.webp" class="big"><img src="img/epiphone-double-neck.webp"
+					alt="Epiphone Double Neck" /></a>
+			<a href="img/les-paul.jpg" class="big"><img src="img/les-paul.jpg" alt="Les Paul" /></a>
+			<a href="img/epiphone-casino-hollowbody.jpg" class="big"><img src="img/epiphone-casino-hollowbody.jpg"
+					alt="Vintage Epiphone Casino Hollowbody" /></a>
+			<a href="img/flying-v.jpg" class="big"><img src="img/flying-v.jpg" alt="Flying V" /></a>
+			<a href="img/les-paul-project.jpg" class="big"><img src="img/les-paul-project.jpg"
+					alt="" /></a>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="section-footer">
+		<div class="container">
+			<div>
+				<h2>Feito por Cassiano Junior</h2>
+				<a href="http://twitter.com">
+					<i class="fab fa-twitter fa-2x"></i>
+				</a>
+				<a href="http://github.com">
+					<i class="fab fa-github fa-2x"></i>
+				</a>
+				<a href="http://linkedin.com">
+					<i class="fab fa-linkedin fa-2x"></i>
+				</a>
+			</div>
+			<div>
+				<h3>Company Info</h3>
+				<ul>
+					<li><a href="#">All Products</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms of Service</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>Blog Posts</h3>
+				<ul>
+					<li><a href="#">Lorem, ipsum dolor.</a></li>
+					<li><a href="#">Lorem, ipsum dolor.</a></li>
+					<li><a href="#">Lorem, ipsum dolor.</a></li>
+					<li><a href="#">Lorem, ipsum dolor.</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>Inscreva-se</h3>
+				<p>Para mais informações e atualizações!</p>
+				<form name="email-form" method="POST" data-netlify="true">
+					<div class="email-form">
+						<span class="form-control-wrap">
+							<input type="email" name="email" id="email" size="40" class="form-control"
+								placeholder="Email">
+						</span>
+						<button type="submit" class="form-control submit">
+							<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/simple-lightbox.min.js"></script>
+	<script>
+		$(function () {
+			const $gallery = $('.gallery a').simpleLightbox();
+		})
+	</script>
+</body>
+
+</html>
