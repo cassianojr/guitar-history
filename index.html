@@ -18,7 +18,13 @@
 			<h1 class="logo">Guitar History</h1>
 			<ul class="nav">
 				<li><a href="#home">Home</a></li>
-				<li><a href="#gallery">Galeria</a></li>
+				<!-- <li><a href="#">História</a></li> -->
+				<li><a href="#">Equipamentos</a></li>
+				<!-- <li><a href="#">Pesquisa</a></li> -->
+				<li><a href="#">Enquete</a></li>
+				<li><a href="#">Cultura</a></li>
+				
+				<!-- <li><a href="#gallery">Galeria</a></li> -->
 			</ul>
 		</div>
 	</nav>
@@ -48,6 +54,7 @@
 
 	<!-- Gallery -->
 	<section class="section-c" id="gallery">
+		<h2 style="display: none;">Galeria</h2>
 		<div class="gallery">
 			<a href="img/gibson-sg.gif" class="big"><img src="img/gibson-sg.gif" alt="Gibson SG" /></a>
 			<a href="img/epiphone-double-neck.webp" class="big"><img src="img/epiphone-double-neck.webp"
@@ -97,7 +104,7 @@
 			<div>
 				<h3>Inscreva-se</h3>
 				<p>Para mais informações e atualizações!</p>
-				<form name="email-form" method="POST" data-netlify="true">
+				<form name="email-form" id="email-form" method="POST" data-netlify="true">
 					<div class="email-form">
 						<span class="form-control-wrap">
 							<input type="email" name="email" id="email" size="40" class="form-control"
@@ -114,11 +121,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/simple-lightbox.min.js"></script>
-	<script>
-		$(function () {
-			const $gallery = $('.gallery a').simpleLightbox();
-		})
-	</script>
+	<script src="js/functions.js"></script>
 </body>
 
 </html>
