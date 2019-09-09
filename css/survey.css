@@ -1,0 +1,150 @@
+/* Section A */
+.section-a {
+	margin: 2rem 0;
+}
+
+.section-a .container{	
+	margin: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-a h1 {
+	font-size: 3rem;
+	text-align: center;
+	color: var(--primary-color);
+}
+
+.section-a p{
+	margin: 1rem 0;
+}
+
+
+#survey-form {
+	background-color: #ffffff;
+	margin: auto;
+	padding: 40px;
+	width: 70%;
+	min-width: 300px;
+}
+
+#survey-form label{
+	font-family: 'Catamaran', sans-serif;
+	font-size: 2rem; 
+}
+  
+input[type=text], input[type=number], textarea {
+	padding: 10px;
+	width: 100%;
+	font-size: 1rem;
+	font-family: 'Catamaran', sans-serif;
+	border-radius: 30px;
+	border: 1px solid #aaaaaa;
+}
+
+.form-control{
+	font-size: 1.2rem;
+}
+  
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+	background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+	display: none;
+}
+
+button {
+	background-color: var(--primary-color);
+	color: #ffffff;
+	border: none;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+#prevBtn {
+	background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbbbbb;
+	border: none;  
+	border-radius: 50%;
+	display: inline-block;
+	opacity: 0.5;
+}
+
+.step.active {
+	opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+	background-color: var(--primary-color);
+}
+
+.txt-center {
+   text-align: center;
+}
+.hide {
+	display: none;
+}
+  
+.clear {
+	float: none;
+	clear: both;
+}
+  
+.rating {
+	  width: 100%;
+	  unicode-bidi: bidi-override;
+	  direction: rtl;
+	  text-align: center;
+	  position: relative;
+}
+  
+.rating > label {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	cursor: pointer;
+	color: #000;
+}
+  
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+	color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+	content: "\2605";
+	position: absolute;
+	left: 0;
+	color: #FFD700;
+}
+
+
+/* Media Queryes */
+@media(max-width: 700px){
+	#survey-form {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+
+	.section-a .container{
+		margin: 0;
+		padding: 1rem;
+	}
+}

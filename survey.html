@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://kit.fontawesome.com/4fbf6b1021.js"></script>
+	<link rel="stylesheet" href="css/simplelightbox.min.css">
+	<link rel="stylesheet" href="css/survey.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+	<title>Guitar History - A História das Guitarras</title>
+</head>
+
+<body id="home">
+	<nav class="navbar">
+		<div class="container">
+			<h1 class="logo">Guitar History</h1>
+			<ul class="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#">Equipamentos</a></li>
+				<li><a href="#">Pesquisa</a></li>
+				<li><a href="survey.html">Enquete</a></li>
+				<li><a href="#">Cultura</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Showcase-->
+	<section class="section-a">
+		<div class="container">
+
+			<h1>O que você sabe sobre Guitarras?</h1>
+			<form id="survey-form" action="">
+
+				<!-- One "tab" for each step in the form: -->
+				<div class="tab">
+					<label for="name"><b>1. Nome Completo:</b></label>
+					<p><input type="text" name="name" placeholder="Nome Completo..." oninput="this.className = ''"></p>
+					<label for="age"><b>2. Idade:</b></label>
+					<p><input name="age" type="number" placeholder="Idade" oninput="this.className = ''"></p>
+				</div>
+
+				<div class="tab">
+					<label for="fav-music-style"><b>3. Qual o seu estilo de música favorito?</b></label>
+					<p class="form-control"><input type="radio" name="fav-music-style" value="rock" checked><b> Rock</b>
+					</p>
+					<p class="form-control"><input type="radio" name="fav-music-style" value="funk"><b> Funk</b></p>
+					<p class="form-control"><input type="radio" name="fav-music-style" value="rap"><b> Rap</b></p>
+					<p class="form-control"><input type="radio" name="fav-music-style" value="pagode"><b> Pagode</b></p>
+					<p class="form-control"><input type="radio" name="fav-music-style" value="samba"><b> Samba</b></p>
+					<p class="form-control"><input type="radio" name="fav-music-style" value="pop"><b> Pop</b></p>
+					<p class="form-control"><input type="radio" name="fav-music-style" value="hip-hop"><b> Hip Hop</b>
+					</p>
+					<p class="form-control"><input type="radio" name="fav-music-style" value="gospel"><b> Gospel</b></p>
+					<p class="form-control"><input type="radio" name="fav-music-style" value="outro"><b> Outro</b></p>
+				</div>
+
+				<div class="tab">
+					<label for="know-play"><b>4. Você sabe tocar guitarra?</b></label>
+					<p class="form-control"><input type="radio" name="know-play" value="Sim" checked><b> Sim.</b></p>
+					<p class="form-control"><input type="radio" name="know-play"
+							value="Não, mas tenho interesse em aprender."><b> Não, mas tenho interesse em aprender.</b>
+					</p>
+					<p class="form-control"><input type="radio" name="know-play"
+							value="Não e não tenho interesse em aprender."><b> Não e não tenho interesse em
+							aprender.</b></p>
+				</div>
+
+				<div class="tab">
+					<label for="fav-instrument"><b>5. Qual o seu instrumento musical favorito?</b></label>
+					<p class="form-control"><input type="radio" name="fav-instrument" value="Guitarra" checked><b>
+							Guitarra.</b></p>
+					<p class="form-control"><input type="radio" name="fav-instrument" value="Violão"><b> Violão.</b></p>
+					<p class="form-control"><input type="radio" name="fav-instrument" value="Violino"><b> Violino.</b>
+					</p>
+					<p class="form-control"><input type="radio" name="fav-instrument" value="Violoncelo"><b>
+							Violoncelo.</b></p>
+					<p class="form-control"><input type="radio" name="fav-instrument" value="Cavaquinho"><b>
+							Cavaquinho.</b></p>
+					<p class="form-control"><input type="radio" name="fav-instrument" value="Piano/Teclado"><b>
+							Piano/Teclado.</b></p>
+					<p class="form-control"><input type="radio" name="fav-instrument" value="Flauta"><b> Flauta.</b></p>
+					<p class="form-control"><input type="radio" name="fav-instrument" value="Ocarina"><b> Ocarina.</b>
+					</p>
+
+				</div>
+
+				<div class="tab">
+					<label for="guitar-type"><b>6. Que tipo de guitarra mais chama a sua atenção?</b></label>
+					<p class="form-control"><input type="radio" name="guitar-type" value="SG" checked><b> SG.</b></p>
+					<p class="form-control"><input type="radio" name="guitar-type" value="Flying V"><b> Flying V</b></p>
+					<p class="form-control"><input type="radio" name="guitar-type" value="Stratocaster"><b>
+							Stratocaster.</b></p>
+					<p class="form-control"><input type="radio" name="guitar-type" value="Outro"><b> Outro.</b></p>
+
+				</div>
+				<div class="tab">
+					<label for="music-on-schools"><b>7. Na sua opnião, as escolas deveriam ensinar as crianças a tocarem
+							instrumentos musicais?</b></label>
+					<p class="form-control"><input type="radio" name="music-on-schools" value="Sim" checked><b> Sim.</b>
+					</p>
+					<p class="form-control"><input type="radio" name="music-on-schools" value="Não"><b> Não.</b></p>
+					<p class="form-control"><input type="radio" name="music-on-schools" value="Indiferente"><b>
+							Indiferente.</b></p>
+				</div>
+
+				<div class="tab">
+					<label for="music-on-schools"><b>8. Ainda não sei o que colocar...</b></label>
+					<p class="form-control"><input type="radio" name="music-on-schools" value="Sim" checked><b> Sim.</b>
+					</p>
+					<p class="form-control"><input type="radio" name="music-on-schools" value="Não"><b> Não.</b></p>
+					<p class="form-control"><input type="radio" name="music-on-schools" value="Indiferente"><b>
+							Indiferente.</b></p>
+				</div>
+
+				<div class="tab">
+					<label for="comment"><b>9. Deixe um comentário sobre o que você achou do site:</b></label>
+					<p class="form-control"><textarea name="comment" cols="30" rows="2"></textarea></p>
+					<label><b>10. Avalie o site:</b></label>
+					<div class="rating">
+						<input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+						<label for="star5">☆</label>
+						<input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+						<label for="star4">☆</label>
+						<input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+						<label for="star3">☆</label>
+						<input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+						<label for="star2">☆</label>
+						<input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+						<label for="star1">☆</label>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div style="overflow:auto;">
+					<div style="float:right;">
+						<button type="button" class="btn" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
+						<button type="button" class="btn" id="nextBtn" onclick="nextPrev(1)">Próximo</button>
+					</div>
+				</div>
+
+				<!-- Circles which indicates the steps of the form: -->
+				<div style="text-align:center;margin-top:40px;">
+					<span class="step"></span>
+					<span class="step"></span>
+					<span class="step"></span>
+					<span class="step"></span>
+					<span class="step"></span>
+					<span class="step"></span>
+					<span class="step"></span>
+					<span class="step"></span>
+				</div>
+
+			</form>
+		</div>
+
+	</section>
+
+	<!-- Footer -->
+	<footer class="section-footer">
+		<div class="container">
+			<div>
+				<h2>Feito por Cassiano Junior</h2>
+				<a href="http://twitter.com">
+					<i class="fab fa-twitter fa-2x"></i>
+				</a>
+				<a href="http://github.com">
+					<i class="fab fa-github fa-2x"></i>
+				</a>
+				<a href="http://linkedin.com">
+					<i class="fab fa-linkedin fa-2x"></i>
+				</a>
+			</div>
+			<div>
+				<h3>Company Info</h3>
+				<ul>
+					<li><a href="#">All Products</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms of Service</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>Blog Posts</h3>
+				<ul>
+					<li><a href="#">Lorem, ipsum dolor.</a></li>
+					<li><a href="#">Lorem, ipsum dolor.</a></li>
+					<li><a href="#">Lorem, ipsum dolor.</a></li>
+					<li><a href="#">Lorem, ipsum dolor.</a></li>
+				</ul>
+			</div>
+			<div>
+				<h3>Inscreva-se</h3>
+				<p>Para mais informações e atualizações!</p>
+				<form name="email-form" id="email-form" method="POST" data-netlify="true">
+					<div class="email-form">
+						<span class="form-control-wrap">
+							<input type="email" name="email" id="email" size="40" class="form-control"
+								placeholder="Email">
+						</span>
+						<button type="submit" class="form-control submit">
+							<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/form-steps.js"></script>
+
+</body>
+
+</html>
