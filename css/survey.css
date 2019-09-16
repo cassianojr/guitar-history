@@ -4,7 +4,8 @@
 }
 
 .section-a .container{	
-	margin: 100px;
+	width: 80%;	
+	margin: auto;
 	align-items: center;
 	justify-content: center;
 }
@@ -144,7 +145,7 @@ button {
 	}
 
 	.section-a .container{
-		margin: 0;
+		margin: auto;
 		padding: 1rem;
 	}
 }

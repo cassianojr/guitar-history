@@ -1,0 +1,70 @@
+/* Section A */
+.section-a {
+	margin: 2rem 0;
+}
+
+.section-a .container{
+    width: 80%;	
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-a .container{	
+    width: 80%;	
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-a h1 {
+	font-size: 3rem;
+	text-align: center;
+	color: var(--primary-color);
+}
+
+.section-a p{
+	margin: 1rem 0;
+	font-size: 1.3rem;
+}
+
+.section h2{
+	font-size: 2rem;	
+}
+
+.section p{
+	font-size: 1.2rem;
+}
+
+.section-list{
+    margin: 2rem 0;
+}
+
+.section-list .container{
+    width: 80%;
+	margin:auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.section-list .container ol {
+    list-style: none;
+    counter-reset: counter;
+}
+
+.section-list .container ol li {
+    counter-increment:counter;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.section-list .container ol li::before {
+    content: counter(counter) ". ";
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+.section-list .container ol li a{
+    font-weight: bold;
+    font-size: 1.2rem;
+}

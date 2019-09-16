@@ -3,14 +3,16 @@
 	margin: 2rem 0;
 }
 
-.section-a .container{	
-	margin: 100px;
+.section-a .container{
+	width: 80%;	
+	margin: auto;
 	align-items: center;
 	justify-content: center;
 }
 
 .section-a .container{	
-	margin: 100px;
+	width: 80%;	
+	margin: auto;
 	align-items: center;
 	justify-content: center;
 }
@@ -55,7 +57,7 @@
 @media(max-width: 700px){
 
 	.section-a .container{
-		margin: 0;
+		margin: auto;
 		padding: 1rem;
 	}
 
